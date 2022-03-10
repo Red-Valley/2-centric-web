@@ -1,10 +1,18 @@
 import '../objects/localeString';
 export default {
   type: 'object',
-  name: 'hero',
-  title: 'Hero',
+  name: 'futureProof',
+  title: 'FutureProof',
   fields: [
     {
+        name: 'backgroundIllustration',
+        type: 'illustration'
+    },
+    {
+        type: 'color',
+        name: 'backgroundColor'
+    },
+    {   
       name: 'headingpartA',
       type: 'localeString',
       title: 'Heading Part A'
@@ -19,16 +27,9 @@ export default {
       name: 'Subtitle'
     },
     {
-      name: 'backgroundIllustration',
-      type: 'illustration'
-    },
-    {
-      name: 'cta',
-      type: 'cta'
-    },
-    {
-      type: 'color',
-      name: 'backgroundColor'
+      type: 'array',
+      name: 'Proofs',
+      of: [{ type: 'textWithIllustration' }]
     },
     {
       name: 'id',
@@ -44,7 +45,7 @@ export default {
     },
     prepare({ title, disabled }) {
       return {
-        title: `Hero: ${disabled ? 'DISABLED' : title}`
+        title: `FutureProof: ${disabled ? 'DISABLED' : title}`
       }
     }
   }

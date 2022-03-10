@@ -1,13 +1,14 @@
+import '../objects/localeString';
 export default {
   type: 'object',
   name: 'textWithIllustration',
   fields: [
     {
-      type: 'string',
+      type: 'localeString',
       name: 'title'
     },
     {
-      type: 'simpleBlockContent',
+      type: 'localeString',
       name: 'text'
     },
     {

@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./header";
-import Footer from "./footer";
+
 import "../styles/layout.css";
 
 class Layout extends React.Component {
@@ -36,7 +36,8 @@ class Layout extends React.Component {
       showNav,
       siteTitle,
       navMenuItems,
-      textWhite = true
+      textWhite = true, 
+      logo,
     } = this.props;
     const { scrolled } = this.state;
     return (
@@ -49,9 +50,9 @@ class Layout extends React.Component {
           showNav={showNav}
           scrolled={scrolled}
           textWhite={textWhite}
+          logo={logo}
         />
         <>{children}</>
-        <Footer siteTitle={siteTitle} />
       </>
     );
   }

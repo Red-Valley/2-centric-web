@@ -2,6 +2,12 @@ import React, { useState } from "react";
 import { graphql } from "gatsby";
 
 import Hero from "../components/hero";
+import FutureProof from "../components/futureProof";
+import Outsourcing from "../components/outsourcing";
+import PeaceOfMind from "../components/peaceOfMind";
+import IllWork from "../components/illWork";
+import Contact from "../components/contact";
+import Footer from "../components/footer";
 import InfoRows from "../components/InfoRows";
 import CTAColumns from "../components/cta-columns";
 import CTA from "../components/cta";
@@ -60,7 +66,7 @@ const Page = props => {
       'Missing "Site settings". Open the studio at http://localhost:3333 and add some content to "Site settings" and restart the development server.'
     );
   }
-
+  console.log('site settings ',site.openGraph.image);
   const page = data.page || data.route.page;
 
   const content = (page._rawContent || [])
@@ -77,9 +83,28 @@ const Page = props => {
         case "hero":
           el = <Hero key={c._key} {...c} />;
           break;
+        case "futureProof":
+          el = <FutureProof key={c._key} {...c} />;
+          break;
+        case "outsourcing":
+          el = <Outsourcing key={c._key} {...c} />;
+          break;
+        case "peaceOfMind":
+          el = <PeaceOfMind key={c._key} {...c} />;
+          break;
+        case "illWork":
+          el = <IllWork key={c._key} {...c} />;
+          break;
+        case "contact":
+          el = <Contact key={c._key} {...c} />;
+          break;
+        case "footer":
+          el = <Footer key={c._key} {...c} />;
+          break;
+          
         case "ctaColumns":
           el = <CTAColumns key={c._key} {...c} />;
-          break;
+          break;          
         case "ctaPlug":
           el = <CTA key={c._key} {...c} />;
           break;

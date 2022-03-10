@@ -1,7 +1,5 @@
 import React from "react";
-import PortableText from "./portableText";
-import CTALink from "./CTALink";
-
+import '../styles/futureProof.css';
 import clientConfig from "../../client-config";
 import { getGatsbyImageData } from "gatsby-source-sanity";
 import { GatsbyImage } from "gatsby-plugin-image";
@@ -26,32 +24,34 @@ const maybeImage = illustration => {
   return img;
 };
 
-function Hero(props) {
+const FutureProof = (props) => {
+  // const lang = props.lang;
   const lang = 'en';
   const img = maybeImage(props.backgroundIllustration);
-  return (
-    <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-      {/* Left col */}
-      <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-        <div className="leading-normal text-2xl mb-8">
 
+  return (
+    <section className="FutureProofblock" id="futureProof">
+      <div>
+            {img}
+            <div>{props.backgroundColor.hex}</div>
             <div>{props.headingpartA[lang]}</div>
             <div>{props.headingpartB[lang]}</div>
             <div>{props.Subtitle[lang]}</div>
-            <div>{props.backgroundColor.hex}</div>
+            <div>
+            {
+              props.Proofs.map( (r, i) => (
+                  <div>
+                      <div>{r.illustration.image.asset.url}</div>
+                      <div>{r.title[lang]}</div>
+                      <div>{r.text[lang]}</div>
+                  </div>
+              ))
+            }
+            </div>
             <div>{props.id}</div>
-        </div>
-        {props.cta && props.cta.title && (
-          <CTALink
-            {...props.cta}
-            buttonActionClass="mx-auto ml-4 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg"
-          />
-        )}
       </div>
-      {/* Right col */}
-      <div className="w-full md:w-3/5 py-6 text-center">{img}</div>
-    </div>
+    </section>
   );
-}
+};
 
-export default Hero;
+export default FutureProof;
