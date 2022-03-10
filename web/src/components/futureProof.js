@@ -28,27 +28,29 @@ const FutureProof = (props) => {
   // const lang = props.lang;
   const lang = 'en';
   const img = maybeImage(props.backgroundIllustration);
-
+  const StyleBackground = {
+    backgroundImage: 'url(' + img.props.image.images.fallback.src + ')',
+    backgroundRepeat: 'no-repeat',
+  }
   return (
-    <section className="FutureProofblock" id="futureProof">
+    <section className="FutureProofblock" id="futureProof" style={StyleBackground}>
       <div>
-            {img}
-            <div>{props.backgroundColor.hex}</div>
-            <div>{props.headingpartA[lang]}</div>
-            <div>{props.headingpartB[lang]}</div>
-            <div>{props.Subtitle[lang]}</div>
-            <div>
-            {
-              props.Proofs.map( (r, i) => (
-                  <div>
-                      <div>{r.illustration.image.asset.url}</div>
-                      <div>{r.title[lang]}</div>
-                      <div>{r.text[lang]}</div>
-                  </div>
-              ))
-            }
-            </div>
-            <div>{props.id}</div>
+        <div>{props.backgroundColor.hex}</div>
+        <div>{props.headingpartA[lang]}</div>
+        <div>{props.headingpartB[lang]}</div>
+        <div>{props.Subtitle[lang]}</div>
+        <div>
+          {
+            props.Proofs.map((r, i) => (
+              <div>
+                <div>{r.illustration.image.asset.url}</div>
+                <div>{r.title[lang]}</div>
+                <div>{r.text[lang]}</div>
+              </div>
+            ))
+          }
+        </div>
+        <div>{props.id}</div>
       </div>
     </section>
   );

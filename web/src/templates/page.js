@@ -141,7 +141,7 @@ const Page = props => {
         description={site.description}
         keywords={site.keywords}
         bodyAttr={{
-          class: "leading-normal tracking-normal text-white gradient"
+          class: "leading-normal tracking-normal gradient"
         }}
         gradient={gradient}
       />
