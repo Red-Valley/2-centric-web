@@ -5,6 +5,10 @@ import clientConfig from "../../client-config";
 import { getGatsbyImageData } from "gatsby-source-sanity";
 import { GatsbyImage } from "gatsby-plugin-image";
 
+import "bootstrap/dist/css/bootstrap.css";
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
 const maybeImage = illustration => {
   let img = null;
   if (illustration && illustration.image && illustration.image.asset && !illustration.disabled) {
@@ -30,29 +34,69 @@ const Outsourcing = (props) => {
   
   let bgurl = props.imageGlobal.image.asset.url;
   let icon = props.icon.image.asset.url;
+  const Style = {
+      backgroundColor: props.backgroundColor.hex,
+  }
+
+ 
 
   return (
-    <section className="Outsourcingblock" id="Outsourcing">
-      <div>
-          <div>{bgurl}</div>
-          <div>{icon}</div>
-          <div>{props.backgroundColor.hex}</div>
-          <div>{props.colorBar.hex}</div>
-          <div>{props.title[lang]}</div>
-          <div>{props.pargraph[lang]}</div>
-          <div>{props.colorLine.hex}</div>
-          <div>
+    <section className="Outsourcingblock" style={Style} id={props.id}>
+      <Row>
+        <Col md={12}>
+            <img src={icon} width={70}/>
+        </Col>
+      </Row>
+      <Row>
+        <Col md={12}>
+          <h2>{props.title[lang]}</h2>
+          <hr/>
+          {props.colorBar.hex} 
+        </Col>
+      </Row>
+      <Row>
+        <Col md={12}>
+            {props.pargraph[lang]}
+            <hr/>
+            {props.colorLine.hex} 
+        </Col>
+      </Row>
+      <Row>
+        <Col md={4}>
             {
-              props.textWithNumber.map( (r, i) => (
-                  <div>
-                      <div>{i+1}{r.title[lang]}</div>
-                      <div>{r.texten}</div>
-                  </div>
+              props.textWithNumberLeftColumn.map( (r, i) => (
+                <Row>
+                  <Col md={2}>
+                    {r.number[lang]}
+                  </Col>
+                  <Col md={10}>
+                      {r.title[lang]}
+                      {r.texten}
+                  </Col>
+                </Row>
               ))
             }
-            </div>
-          <div>{props.id}</div>
-      </div>
+        </Col>
+        <Col md={4}>
+          <img src={bgurl}/>
+        </Col>
+        <Col md={4}>
+            {
+              props.textWithNumberRightColumn.map( (r, i) => (
+                <Row>
+                  <Col md={2}>
+                    {r.number[lang]}
+                  </Col>
+                  <Col md={10}>
+                      {r.title[lang]}
+                      {r.texten}
+                  </Col>
+                </Row>
+              ))
+            }
+
+        </Col>
+      </Row>
     </section>
   );
 };

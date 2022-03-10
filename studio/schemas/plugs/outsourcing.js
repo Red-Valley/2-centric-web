@@ -35,7 +35,12 @@ export default {
     },
     {
       type: 'array',
-      name: 'textWithNumber',
+      name: 'textWithNumberLeftColumn',
+      of: [{ type: 'textWithoutIllustration' }]
+    },
+    {
+      type: 'array',
+      name: 'textWithNumberRightColumn',
       of: [{ type: 'textWithoutIllustration' }]
     },
     {

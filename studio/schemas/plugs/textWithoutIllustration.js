@@ -4,6 +4,10 @@ export default {
   name: 'textWithoutIllustration',
   fields: [
     {
+      type: 'string',
+      name: 'number'
+    },
+    {
       type: 'localeString',
       name: 'title'
     },

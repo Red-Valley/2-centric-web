@@ -3,6 +3,12 @@ import '../styles/peaceOfMind.css';
 import clientConfig from "../../client-config";
 import { getGatsbyImageData } from "gatsby-source-sanity";
 import { GatsbyImage } from "gatsby-plugin-image";
+
+import "bootstrap/dist/css/bootstrap.css";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+
 const maybeImage = illustration => {
   let img = null;
   if (illustration && illustration.image && illustration.image.asset && !illustration.disabled) {
@@ -27,21 +33,34 @@ const maybeImage = illustration => {
 const PeaceOfMind = (props) => {
   const lang = ['en'];
   
-  const bgurl =     props.background.image.asset.url;
   const imgglobal = props.imageGlobal.image.asset.url;
+
+
+const Style = {
+  backgroundImage: 'url(' + props.background.image.asset.url + ')',
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: '15%',
+  backgroundColor: props.backgroundColor.hex,
+  backgroundPosition: 'top right',
+
+}
+
   //props.spanishBackgroundImage.image.asset.url;
   return (
-    <section className="PeaceOfMindblock" id="PeaceOfMind">
-      <div>
-          {bgurl}
-          {imgglobal}
-          <div>{props.backgroundColor.hex}</div>
-          <div>{props.titleA[lang]}</div>
-          <div>{props.titleB[lang]}</div>
-          <div>{props.titleC[lang]}</div>
-          <div>{props.pargraph[lang]}</div>
-          <div>{props.id}</div>
-      </div>
+    <section className="PeaceOfMindblock" id={props.id} style={Style}>
+      <Row>
+          <Col md={6}>
+            <img src={imgglobal} width="50%" />
+          </Col>
+          <Col md={6}>
+              <h2>
+                <span>{props.titleA[lang]}</span>&nbsp;<span>{props.titleB[lang]}</span>&nbsp;<span>{props.titleC[lang]}</span>
+              </h2>
+              <div>{props.pargraph[lang]}</div>
+              <div></div>
+
+          </Col>
+      </Row>
     </section>
   );
 };

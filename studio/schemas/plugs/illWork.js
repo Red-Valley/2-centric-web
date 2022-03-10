@@ -13,6 +13,11 @@ export default {
       type: 'localeString',
       title: 'Title'
     },
+    {   
+      name: 'SubTitle',
+      type: 'localeString',
+      title: 'SubTitle'
+    },
     {
         name: 'image',
         type: 'illustration'
