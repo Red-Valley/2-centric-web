@@ -58,17 +58,19 @@
 }
 .Hero_block{
     margin-top:0px;
+    background-position: top right;
 }
 
 @media (max-width: 576px) {
     .Hero_block{
         background-size: cover;
+        background-position: top center;
     }
     .Hero_block h2 {
-        font-size: 3.488rem !important;
+        font-size: 3rem !important;
     }
     .Hero_block h3 {
-        font-size: 3.0rem !important;
+        font-size: 2.5rem !important;
         line-height: 40px;
         margin-bottom: 30px;
     }

@@ -38,7 +38,6 @@ function Hero(props) {
   const StyleBackground = {
     backgroundImage: 'url(' + img.props.image.images.fallback.src + ')',
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'top right',
     backgroundColor: '#FFFFFF',
   }
   return (
