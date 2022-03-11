@@ -21,7 +21,7 @@ const Footer = (props) => {
         <Row>
           <Col md={12} class="text-center">
             <img src={logo} width="250" className="logoicon" />
-            <img src={diagline} width="30" className="diagline"/>
+            <img src={diagline} width="30" className="diagline hidden-xs"/>
             <span className="emailtext">{props.email[lang]}</span>
           </Col>
           <Col md={12} className="copyname">

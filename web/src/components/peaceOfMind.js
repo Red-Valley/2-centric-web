@@ -39,9 +39,8 @@ const PeaceOfMind = (props) => {
 const Style = {
   backgroundImage: 'url(' + props.background.image.asset.url + ')',
   backgroundRepeat: 'no-repeat',
-  backgroundSize: '20%',
   backgroundColor: props.backgroundColor.hex,
-  backgroundPosition: '100% 10%',
+  
 
 }
 
@@ -51,7 +50,8 @@ const Style = {
       <div class="container">
           <Row>
               <Col md={7}>
-                <img src={imgglobal} width="60%" className="img" />
+              <img src={imgglobal} width="80%"  className="img visible-xs" />
+                <img src={imgglobal} width="60%" className="img hidden-xs" />
               </Col>
               <Col md={5}>
                   <h2>

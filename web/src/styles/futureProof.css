@@ -30,7 +30,7 @@
     color:#FFF;
     letter-spacing: 2.46px;
     font-weight: lighter;
-    font-family: 'Avenir-BlackOblique' !important;
+    font-family: 'Avenir-Oblique' !important;
     font-size: 1rem;
 }
 .FutureProofblock .bloque_icon{
@@ -40,3 +40,30 @@
     margin-top: 60px;
     margin-bottom: 60px;
 }
+
+@media (max-width: 576px) {
+
+    .FutureProofblock h2{
+        font-size: 54px;
+        margin-top:70px;
+        margin-bottom: 50px;
+        letter-spacing: 0px;
+        line-height: 50px;
+        font-family: 'Avenir-Black';
+    }
+    .FutureProofblock p{
+        margin-bottom: 0px !important;
+    }
+    .FutureProofblock .bloque_icon{
+        text-align: center;
+    }
+    .FutureProofblock .bloque_icon img{
+        margin: 0 auto;
+    }
+    .FutureProofblock .group-icon {
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
+}
+  

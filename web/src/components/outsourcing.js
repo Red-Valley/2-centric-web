@@ -73,6 +73,9 @@ const Outsourcing = (props) => {
             </Col>
           </Row>
           <Row className="rowmap">
+            <Col md={4} className="visible-xs">
+              <img src={bgurl} width={'80%'}/>
+            </Col>
             <Col md={4}>
                 {
                   props.textWithNumberLeftColumn.map( (r, i) => (
@@ -94,7 +97,7 @@ const Outsourcing = (props) => {
                   ))
                 }
             </Col>
-            <Col md={4}>
+            <Col md={4} className="hidden-xs">
               <img src={bgurl} width={'80%'}/>
             </Col>
             <Col md={4}>

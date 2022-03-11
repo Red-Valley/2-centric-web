@@ -93,8 +93,10 @@ const Contact = (props) => {
           <Row>
               <Col md={6}>
                 <h2>
-                    <span>{props.titlePartA[lang]}</span>&nbsp;<span>{props.titlePartB[lang]}</span>&nbsp;
-                    <span>{props.titlePartC[lang]}</span>&nbsp;<span>{props.titlePartD[lang]}</span>
+                    <span className="partA">{props.titlePartA[lang]}</span><br/>
+                    <span className="partB">{props.titlePartB[lang]}</span>
+                    <span className="partC">{props.titlePartC[lang]}</span><br/>
+                    <span className="partD">{props.titlePartD[lang]}</span>
                 </h2>
                 <p>{props.pargraph[lang]}</p>
               </Col>
@@ -199,28 +201,10 @@ const Contact = (props) => {
                     <Row>
                         <Col md={12}>
                         <div style={{textAlign:'left',marginTop:'50px'}}>
-                      {/* <button type="submit" class="Btnformmail" >
-                          {props.submitFormMessage[lang]}
-                          <span>&nbsp; ❯</span>
-                          <div class="blackrowc2a"></div>
-                      </button> */}
-                      <button
-                        type="submit"
-                        className='cta_button_invert'
-                        >
-                        </button>
+                            <button type="submit" className='Btnformmail' > SUBMIT FORM</button>
                           </div>  
                         </Col>
-                    </Row>
-                    
-              
-                   
-            
-                   
-                   
-      
-                   
-                    
+                    </Row>                    
                 </form>
 
               </Col>

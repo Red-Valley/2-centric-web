@@ -1,5 +1,6 @@
-
-
+section#contact{
+    padding-top:7%;
+}
 .textlink{
     font-size:1rem !important;
 }
@@ -60,7 +61,7 @@
 .Btnformmail{
     font-size:16px;
     color:#ffffff;
-    background-color: #EA0000;
+    background-color: #4d4d4d;
     width: 208px;
     height: 48px;
     line-height: 48px;
@@ -70,6 +71,7 @@
     margin-bottom:45px;
     display: flex;
     justify-content: center;
+    border-radius: 30px;
 }
 .text-red{
     color: #EA0000 !important;
@@ -78,8 +80,11 @@
     padding-bottom: 81px;
     background-size: 'cover';
 }
-input::placeholder{
+.Contactblock p{
     color:#FFF;
+}
+input::placeholder,textarea::placeholder{
+    color:#FFF !important;
 }
 @media (max-width: 1439px) {
     
@@ -125,5 +130,36 @@ input::placeholder{
     .contactForm{
         margin-top: 50px;
         padding-right:0px;
+    }
+}
+
+.Contactblock .partB, .Contactblock .partD{
+    color:#FFF;
+}
+.Contactblock .partA, .Contactblock .partC{
+    color:#4d4d4d;
+}
+.Contactblock .partA{
+    font-size: 25px !important;
+    line-height: 20px;
+}
+.Contactblock .partB{
+    font-size: 50px !important;
+}
+.Contactblock .partC{
+    font-size: 100px !important;
+    line-height: 0px;
+    vertical-align: middle;
+    margin-top: -26px;
+}
+.Contactblock .partD{
+    font-size: 70px !important;
+    line-height: 44px;
+}
+
+@media (max-width: 576px) {
+    .Contactblock .partD{
+        font-size: 60px !important;
+        line-height: 44px;
     }
 }

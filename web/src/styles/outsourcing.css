@@ -63,3 +63,24 @@ h2 {
 p{
     font-family: 'Avenir-Oblique' !important;
 }
+
+@media (max-width: 576px) {
+
+    .Outsourcingblock .number{
+        text-align: left;
+        margin-bottom: 0px;
+        
+    }
+    .Outsourcingblock .hrbig{
+        margin-bottom: 20px;
+    }
+    .Outsourcingblock .text_bloq {
+        padding-left: 10px;
+    }
+    .rowmap img{
+        margin: 0 auto;
+    }
+    .Outsourcingblock .rowmap{
+        padding-bottom: 50px;
+    }
+}

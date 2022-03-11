@@ -70,10 +70,9 @@ const IllWork = (props) => {
             </Col>
             <Col md={6}>
                 <Row className="mt-50">
-
                   {
                     props.TextWithIcon.map( (r, i) => (
-                        <Col md={6} className="textwithicon">
+                        <Col md={6} sm={6} xs={6} className="textwithicon">
                             <Row>
                               <Col md={3}>
                                   <img src={r.illustration.image.asset.url} width="50" className="icon"/>

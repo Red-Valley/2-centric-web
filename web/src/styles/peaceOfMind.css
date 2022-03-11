@@ -23,3 +23,27 @@
     padding-right: 0px;
     float:right;
 }
+.PeaceOfMindblock{
+    background-size: 20%;
+    background-position: 100% 10%;
+}
+
+@media (max-width: 576px) {
+    .PeaceOfMindblock{
+        background-size: 50%;
+        background-position: 100% 1%;
+    }
+    .PeaceOfMindblock h2{
+        margin-top:0px;
+        text-align: left !important;
+        font-size: 45px;
+        line-height: 40px;
+    }
+    .PeaceOfMindblock p{
+        text-align: left;
+        width:100%;
+        float:left;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}

@@ -47,7 +47,8 @@ const FutureProof = (props) => {
           <Row>
             <Col md={6} xs={12}>
               <h2>
-                  <span className="partA">{props.headingpartA[lang]}&nbsp;</span>
+                  <span className="partA">{props.headingpartA[lang]}</span>
+                  <span className="hidden-xs">&nbsp;</span>
                   <span className="partB">{props.headingpartB[lang]}</span>
               </h2>
               <p>

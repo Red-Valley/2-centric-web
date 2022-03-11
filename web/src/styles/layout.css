@@ -74,9 +74,27 @@
 body{
   font-family: avenir_heavy !important;
 }
+.visible-xs{
+  display:none !important;
+}
+.hidden-xs{
+
+}
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    padding-left:15px;
+    padding-right:20px;
+  }
+  .visible-xs{
+    display:block !important;
+  }
+  .hidden-xs{
+      display:none !important;
   }
 }
 @media (min-width: 768px) {

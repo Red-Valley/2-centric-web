@@ -19,11 +19,12 @@
     text-align: left;
     font-style: italic;
     font-weight: lighter !important;
-    font-family: 'Avenir-BlackOblique' !important;
+    font-family: 'Avenir-Oblique' !important;
 }
 .Hero_block{
     padding-top:150px;
     padding-bottom:150px;
+    background-size: contain,
 }
 .h-100 {
     height: 100%!important;
@@ -58,3 +59,24 @@
 .Hero_block{
     margin-top:0px;
 }
+
+@media (max-width: 576px) {
+    .Hero_block{
+        background-size: cover;
+    }
+    .Hero_block h2 {
+        font-size: 3.488rem !important;
+    }
+    .Hero_block h3 {
+        font-size: 3.0rem !important;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+    .Hero_block p {
+        font-size: 15px !important;
+    }
+    .Hero_block #navAction{
+        font-size: 14px !important;
+        width:100%;
+    }
+  }
