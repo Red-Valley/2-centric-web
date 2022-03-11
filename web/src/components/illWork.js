@@ -38,46 +38,60 @@ const IllWork = (props) => {
   const Style = {
     backgroundColor: props.backgroundColor.hex,
   }
+
+
+  const stylehr = {
+    border: '1px solid '+props.lineColor.hex,
+    backgroundColor: props.lineColor.hex
+  }
+
   
   return (
-    <section lassName="IllWorkblock" id={props.id} style={Style}>
-      <Row>
-        <Col>
-            {props.title[lang]}
-            <hr />
-            {props.lineColor.hex}
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          {props.SubTitle[lang]}
-        </Col>
-      </Row>
-      <Row>
-        <Col md={6}>
-            <img src={bgurl} width="50%" />
-        </Col>
-        <Col md={6}>
-            <Row>
+    <section className="IllWorkblock" id={props.id} style={Style}>
+      <div class="container">
+          <Row className="justify-content-md-center">
+            <Col md={5}>
+                <h2>
+                  {props.title[lang]}
+                </h2>
+                <hr className="hrsmall" style={stylehr}/>
+            </Col>
+          </Row>
+          <Row className="justify-content-md-center">
+            <Col md={9}>
+                <p>
+                  {props.SubTitle[lang]}
+                </p>
+            </Col>
+          </Row>
+          <Row className="content-illwork">
+            <Col md={6} className="text-center">
+                <img src={bgurl} width="60%" className="img" />
+            </Col>
+            <Col md={6}>
+                <Row className="mt-50">
 
-              {
-                props.TextWithIcon.map( (r, i) => (
-                    <Col md={6}>
-                        <Row>
-                          <Col md={3}>
-                              <img src={r.illustration.image.asset.url} width="50"/>
-                          </Col>
-                          <Col  md={9}>
-                              {r.title[lang]}
-                          </Col>
-                        </Row>
-                        
-                    </Col>
-                ))
-              }
-            </Row>
-        </Col>
-      </Row>
+                  {
+                    props.TextWithIcon.map( (r, i) => (
+                        <Col md={6} className="textwithicon">
+                            <Row>
+                              <Col md={3}>
+                                  <img src={r.illustration.image.asset.url} width="50" className="icon"/>
+                              </Col>
+                              <Col  md={4}>
+                                  <h3>
+                                      {r.title[lang]}
+                                  </h3>
+                              </Col>
+                            </Row>
+                            
+                        </Col>
+                    ))
+                  }
+                </Row>
+            </Col>
+          </Row>
+      </div>
     </section>
   );
 };

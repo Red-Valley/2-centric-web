@@ -1,0 +1,65 @@
+.Outsourcingblock .iconlogo{
+    margin: 0 auto;
+
+}
+.Outsourcingblock .iconbloque{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.Outsourcingblock .hrsmall{
+    width: 50px;
+    border-top:2px solid;
+    opacity: 1;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.Outsourcingblock .hrbig{
+    border-top:2px solid;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 70px; 
+}
+.Outsourcingblock p{
+    letter-spacing: 2.46px;
+}
+.text-center{
+    text-align: center;
+}
+.Outsourcingblock .number{
+    font-size:2.813rem;
+    color:#22AEFF;
+    text-decoration: underline;
+    text-align: right;
+    vertical-align: top;
+    font-family: 'Avenir-Black' !important;
+}
+.Outsourcingblock .title{
+    font-weight: bold;
+    text-align: left;
+    margin-top:15px;
+    margin-bottom: 10px;
+    font-family: 'Avenir-Black' !important;
+}
+.Outsourcingblock .text{
+    letter-spacing: 2.46px;
+    font-weight: lighter;
+    text-align: left;
+    
+}
+.Outsourcingblock .text_bloq{
+    padding-left:20px
+}
+.Outsourcingblock .rowmap{
+    padding-bottom: 100px;
+}
+h2 {
+    font-family: 'Avenir-Black' !important;
+}
+p{
+    font-family: 'Avenir-Oblique' !important;
+}

@@ -14,17 +14,11 @@ export default {
     {
       title: 'Text En',
       name: 'TextEn',
-      type: 'code',
-      options: {
-        language: 'html'
-      }
+      type: 'simpleBlockContent',
     },{
       title: 'Text Es',
       name: 'TextEs',
-      type: 'code',
-      options: {
-        language: 'html'
-      }
+      type: 'simpleBlockContent',
     }
   ]
 }

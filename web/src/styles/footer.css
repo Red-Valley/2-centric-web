@@ -1,0 +1,28 @@
+.Footerblock{
+    padding-top:60px;
+    text-align: center;
+
+}
+.Footerblock .logoicon{
+    width:200px;
+    display: inline-block;
+}
+.Footerblock .diagline{
+    display: inline-block;
+    margin-left:20px;
+    margin-right: 20px;
+
+}
+.Footerblock .emailtext{
+    letter-spacing: 3.05px;
+    font-size: 26px;
+    color:#FFF;
+}
+.Footerblock .copyname{
+    letter-spacing: 16.8px;
+    font-size: 21px;
+    color:#FFF;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    text-align: center;
+}

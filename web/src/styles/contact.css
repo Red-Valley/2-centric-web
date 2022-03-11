@@ -1,0 +1,129 @@
+
+
+.textlink{
+    font-size:1rem !important;
+}
+.contactBlock h2{
+    font-size: 4.25rem;
+    color: #ffffff;
+    font-family: brfirmabold;
+    letter-spacing: -2.86px;
+    line-height: 68px;
+    text-align: left;
+    padding-top:133px;
+    margin-bottom:85px;
+    padding-right: 146px !important;
+    text-align:right;
+    width:38.75rem;
+}
+.contactBlock h3{
+    font-size: 1.4rem;
+    color: #ffffff; 
+    font-family: brfirmalight;
+    letter-spacing: -2.01px;
+    line-height: 32px;
+    text-align: right;
+    padding-left: 7.375rem !important;
+    padding-right: 137px;
+    
+}
+.contactForm{
+    margin-top: 95px;
+    padding-right:110px;
+}
+.formfield{
+    width:100%;
+    font-size: 1rem;
+    color:#ffffff;
+    opacity: 0.75;
+    letter-spacing: -0.7px;
+    margin-top: 36px;
+    border-bottom: 1px solid #ffffff !important;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-radius: 0px;
+    background: transparent;
+    padding:0 16px 16px 5px;
+    outline: none;
+}
+.invalid-feedback{
+    text-align: left;
+    font-size: 14px;
+    color:#EA0000;
+    padding-top: 5px;
+}
+.textarea{
+    height: 145px !important;
+    resize: none;
+}
+.Btnformmail{
+    font-size:16px;
+    color:#ffffff;
+    background-color: #EA0000;
+    width: 208px;
+    height: 48px;
+    line-height: 48px;
+    letter-spacing: -0.67px;
+    text-align: center;
+    margin-top:45px;
+    margin-bottom:45px;
+    display: flex;
+    justify-content: center;
+}
+.text-red{
+    color: #EA0000 !important;
+}
+.contactBlock{
+    padding-bottom: 81px;
+    background-size: 'cover';
+}
+input::placeholder{
+    color:#FFF;
+}
+@media (max-width: 1439px) {
+    
+}
+
+@media (max-width: 767px) {
+    .contactBlock{
+        background-size: 0%;
+
+    }
+    .contactBlock h2{
+        font-size: 48px;
+        letter-spacing: -2.02px;
+        padding-top:65px;
+        padding-right: 0px !important;
+        margin-bottom: 75px !important;
+        text-align:left;
+        padding-left:0px !important;
+        width: 100%;
+
+    }
+    .contactBlock h3{
+        padding-right:15px !important;
+        font-size: 1.25rem;
+        letter-spacing: -0.84px;
+        line-height: 32px !important;
+        text-align: left;
+        font-family: brfirmalight;
+        width: 100%;
+        padding-left:0% !important;
+
+    } 
+    .widthsectioncontact{
+        width:100% !important;
+        overflow-x: hidden;
+    }
+    .contactBlock{
+        padding-right:15px;
+        padding-bottom: 25%;
+        background-size: 0%;
+        background-color:#111111;
+    }
+    .contactForm{
+        margin-top: 50px;
+        padding-right:0px;
+    }
+}

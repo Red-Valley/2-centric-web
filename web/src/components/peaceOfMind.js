@@ -39,28 +39,28 @@ const PeaceOfMind = (props) => {
 const Style = {
   backgroundImage: 'url(' + props.background.image.asset.url + ')',
   backgroundRepeat: 'no-repeat',
-  backgroundSize: '15%',
+  backgroundSize: '20%',
   backgroundColor: props.backgroundColor.hex,
-  backgroundPosition: 'top right',
+  backgroundPosition: '100% 10%',
 
 }
 
   //props.spanishBackgroundImage.image.asset.url;
   return (
     <section className="PeaceOfMindblock" id={props.id} style={Style}>
-      <Row>
-          <Col md={6}>
-            <img src={imgglobal} width="50%" />
-          </Col>
-          <Col md={6}>
-              <h2>
-                <span>{props.titleA[lang]}</span>&nbsp;<span>{props.titleB[lang]}</span>&nbsp;<span>{props.titleC[lang]}</span>
-              </h2>
-              <div>{props.pargraph[lang]}</div>
-              <div></div>
-
-          </Col>
-      </Row>
+      <div class="container">
+          <Row>
+              <Col md={7}>
+                <img src={imgglobal} width="60%" className="img" />
+              </Col>
+              <Col md={5}>
+                  <h2>
+                    <span>{props.titleA[lang]}</span>&nbsp;<span className="text-color">{props.titleB[lang]}</span>&nbsp;<span>{props.titleC[lang]}</span>
+                  </h2>
+                  <p>{props.pargraph[lang]}</p>
+              </Col>
+          </Row>
+      </div>
     </section>
   );
 };

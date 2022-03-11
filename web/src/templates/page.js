@@ -145,7 +145,7 @@ const Page = props => {
         }}
         gradient={gradient}
       />
-      <div className="pt-24">{content}</div>
+      <div>{content}</div>
     </Layout>
   );
 };

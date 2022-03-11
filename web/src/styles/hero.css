@@ -1,15 +1,29 @@
-h3{
-    font-size: 4.5rem !important;
+.Hero_block h2{
+    font-size: 6.688rem !important;
     color:#00AEFF;
+    margin-top:-45px !important;
+    font-family: 'Avenir-Black' !important;
 }
-h2{
-    font-size: 8.438rem;
+.Hero_block h3{
+    font-size: 3.125rem !important;
     color:#4D4D4D;
+    margin-bottom: 0px;
+    letter-spacing: 8.42px;
+    font-family: 'Avenir-Heavy' !important;
+    margin-bottom: 2%;
 }
-p{
-
+.Hero_block p{
+    color: #999999;
+    font-size:21px;
+    letter-spacing: 2.46px;
+    text-align: left;
+    font-style: italic;
+    font-weight: lighter !important;
+    font-family: 'Avenir-BlackOblique' !important;
 }
 .Hero_block{
+    padding-top:150px;
+    padding-bottom:150px;
 }
 .h-100 {
     height: 100%!important;
@@ -20,4 +34,27 @@ p{
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+#navAction{
+    background-color: #22AEFF !important;
+    color:#FFF !important;
+    font-size: 0.813rem !important;
+    padding:0.625rem 0.938rem !important;
+    box-shadow: none;
+    font-family: 'Avenir-Heavy' !important;
+
+}
+.Hero_block #navAction{
+    background-color: #22AEFF !important;
+    color:#FFF !important;
+    font-size: 1.25rem !important;
+    padding:0.625rem 0.938rem !important;
+    box-shadow: none;
+
+}
+.bg-transparent{
+    background: transparent !important;
+}
+.Hero_block{
+    margin-top:0px;
 }

@@ -1,0 +1,41 @@
+.IllWorkblock h2{
+    text-align: center;
+    margin-top: 50px;
+}
+.IllWorkblock .hrsmall{
+    width: 50px;
+    border-top:2px solid;
+    opacity: 1;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.IllWorkblock p{
+    letter-spacing: 2.46px;
+    text-align: center;
+}
+
+.IllWorkblock .content-illwork{
+    margin-top:50px;
+}
+.IllWorkblock .img{
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.IllWorkblock .icon{
+    background-color: #4d4d4d;
+    border-radius: 50px;
+}
+.IllWorkblock h3{
+    color: #4d4d4d;
+    font-size: 18px;
+    vertical-align: middle;
+}
+.IllWorkblock .textwithicon{
+    margin-bottom: 20px;
+}
+.mt-50{
+    margin-top:50px;
+}

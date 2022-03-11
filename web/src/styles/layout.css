@@ -2,44 +2,106 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
-blockquote {
-  font-family: monospace;
-  margin: 2em;
+@font-face {
+  font-family: avenir_heavy;
+  src: url(./font/Avenir_Heavy.ttf);
 }
 
-ol,
-ul {
-  margin: 1.2em;
+/* 
+@font-face {
+  font-family: avenir;
+  src: url(./font/Avenir.ttc);
 }
-
-ol {
-  list-style: decimal;
+@font-face {
+  font-family: avenir_next;
+  src: url(./font/Avenir_Next_Condensed.ttc);
 }
-
-a {
-  text-decoration: underline;
-  text-decoration-color: cornflowerblue;
-  color: cornflowerblue;
-}
-
-ul {
-  list-style: circle;
-}
-
-h3 {
-  font-size: 1.35rem;
-  font-weight: 400;
-}
-
-h2 {
-  font-size: 1.65rem;
-  font-weight: 600;
-}
-
-h1 {
-  font-size: 1.875rem;
-  font-weight: 900;
-}
-
 */
+@font-face{
+  font-family: Avenir-Book;
+  src: url(./font/Avenir-Book-01.ttf);
+}
+@font-face{
+  font-family: Avenir-BookOblique;
+  src: url(./font/Avenir-BookOblique-02.ttf);
+}
+@font-face{
+  font-family: Avenir-Black;
+  src: url(./font/Avenir-Black-03.ttf);
+}
+@font-face{
+  font-family: Avenir-BlackOblique;
+  src: url(./font/Avenir-BlackOblique-04.ttf);
+}
+@font-face{
+  font-family: Avenir-Heavy;
+  src: url(./font/Avenir-Heavy-05.ttf);
+}
+@font-face{
+  font-family: Avenir-HeavyOblique;
+  src: url(./font/Avenir-HeavyOblique-06.ttf);
+}
+@font-face{
+  font-family: Avenir-Light;
+  src: url(./font/Avenir-Light-07.ttf);
+}
+@font-face{
+  font-family: Avenir-LightOblique;
+  src: url(./font/Avenir-LightOblique-08.ttf);
+}
+@font-face{
+  font-family: Avenir-Medium;
+  src: url(./font/Avenir-Medium-09.ttf);
+}
+@font-face{
+  font-family: Avenir-MediumOblique;
+  src: url(./font/Avenir-MediumOblique-10.ttf);
+}
+@font-face{
+  font-family: Avenir-Oblique;
+  src: url(./font/Avenir-Oblique-11.ttf);
+}
+@font-face{
+  font-family: Avenir-Roman;
+  src: url(./font/Avenir-Roman-12.ttf);
+}
+
+
+@font-face {
+  font-family: avenir_nextlt;
+  src: url(./font/AvenirNextLTPro-It.otf);
+}
+body{
+  font-family: avenir_heavy !important;
+}
+@media (min-width: 576px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  }
+}
+#containerheader{
+    padding-left:0px !important;  
+    padding-right:0px !important;
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1440px !important;
+    padding-left:100px !important;
+    padding-right:100px !important;
+  }
+}

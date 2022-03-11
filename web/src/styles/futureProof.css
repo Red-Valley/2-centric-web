@@ -1,0 +1,42 @@
+.FutureProofblock h2{
+    font-size: 3.563rem;
+    margin-top:130px;
+    margin-bottom: 50px;
+    letter-spacing: 0px;
+    line-height: 50px;
+    font-family: 'Avenir-Black';
+}
+
+.FutureProofblock h2 .partA{
+    color: #FFF;
+}
+.FutureProofblock h2 .partB{
+    color: #4D4D4D;
+}
+
+.FutureProofblock p{
+    color:#FFF;
+    font-weight: lighter;
+    margin-bottom: 100px;
+    letter-spacing: 2.46px;
+    width:90%;
+}
+.FutureProofblock .titleicon{
+    color:#FFF;
+    margin-top:10px;
+    font-size:1.2rem;
+}
+.FutureProofblock .texticon{
+    color:#FFF;
+    letter-spacing: 2.46px;
+    font-weight: lighter;
+    font-family: 'Avenir-BlackOblique' !important;
+    font-size: 1rem;
+}
+.FutureProofblock .bloque_icon{
+    margin-bottom: 30px;
+}
+.FutureProofblock .group-icon{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}

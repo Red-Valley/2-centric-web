@@ -1,0 +1,25 @@
+.text-color{
+    color:#22AEFF;
+}
+.PeaceOfMindblock h2{
+    margin-top:170px;
+    text-align: right;
+    line-height: 55px;
+    font-size: 62px;
+    color:#FFF;
+}
+.PeaceOfMindblock .img{
+    margin: 0 auto;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.PeaceOfMindblock p{
+    color:#FFF;
+    font-family: Avenir-Light;
+    font-size: 14px;
+    letter-spacing: 2.46px;
+    text-align: right;
+    width:85%;
+    padding-right: 0px;
+    float:right;
+}
