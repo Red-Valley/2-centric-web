@@ -80,6 +80,64 @@ body{
 .hidden-xs{
 
 }
+
+.langnav{
+  display: block;
+  background-color: transparent;
+  border: none;
+  height: 38px;
+  width: 200px;
+  padding: 0px 8px;
+  margin: 0px;
+  outline: none;
+  cursor: pointer;
+  z-index: 5;
+  top:66px;
+  z-index: 999;
+}
+.langnav ul li{
+  display: inline;
+  margin-right:12px;
+  font-size: 12px;
+  text-align: center;
+}
+.lang_bloque{
+  width: 53px;
+  height: 24px;
+  border-radius: 12px;
+  padding: 5px 8px !important;
+  opacity: 0.5;
+}
+.lang_bloque.active{
+  opacity: 1;
+}
+.lang_bloque:hover{
+    background-color:rgba(0, 0, 0, 0.3);
+    width: 53px;
+    height: 24px;
+    border-radius: 12px;
+    padding: 6px 8px 5px 8px !important;
+
+
+}
+.lang_text{
+  font-size: 12px;
+  color:#4d4d4d;
+  display:inline-block;
+  position:relative;
+}
+li.bl{ 
+  border-left: 1px solid #FFF;
+  padding-left:16px;
+  margin-left:5px !important;
+}
+.flag_icon{
+  width:12px !important;
+  height: 12px !important;
+  display:inline-block;
+  margin-right:8px;
+}
+
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;

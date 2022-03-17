@@ -31,7 +31,7 @@ const maybeImage = illustration => {
 
 const FutureProof = (props) => {
   // const lang = props.lang;
-  const lang = 'en';
+  const lang = props.lang;
   const img = maybeImage(props.backgroundIllustration);
   const StyleBackground = {
     backgroundImage: 'url(' + img.props.image.images.fallback.src + ')',

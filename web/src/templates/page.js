@@ -51,6 +51,17 @@ export const query = graphql`
 const Page = props => {
   const { data, errors } = props;
 
+  
+  let iniLang = '';
+  // if(window.localStorage.getItem('lang') !== null){
+  //   iniLang = window.localStorage.getItem('lang');
+  // }else{
+  //   iniLang = 'en';
+  // }
+  iniLang = 'en';
+
+  const [lang,setLang] = useState(iniLang);
+
   if (errors) {
     return (
       <Layout>
@@ -75,46 +86,46 @@ const Page = props => {
       let el = null;
       switch (c._type) {
         case "pricing":
-          el = <Pricing key={c._key} {...c} />;
+          el = <Pricing key={c._key} {...c}  lang={lang}  />;
           break;
         case "infoRows":
-          el = <InfoRows key={c._key} {...c} />;
+          el = <InfoRows key={c._key} {...c}  lang={lang}  />;
           break;
         case "hero":
-          el = <Hero key={c._key} {...c} />;
+          el = <Hero key={c._key} {...c}  lang={lang}  />;
           break;
         case "futureProof":
-          el = <FutureProof key={c._key} {...c} />;
+          el = <FutureProof key={c._key} {...c}  lang={lang}  />;
           break;
         case "outsourcing":
-          el = <Outsourcing key={c._key} {...c} />;
+          el = <Outsourcing key={c._key} {...c}  lang={lang}  />;
           break;
         case "peaceOfMind":
-          el = <PeaceOfMind key={c._key} {...c} />;
+          el = <PeaceOfMind key={c._key} {...c}  lang={lang}  />;
           break;
         case "illWork":
-          el = <IllWork key={c._key} {...c} />;
+          el = <IllWork key={c._key} {...c}  lang={lang}  />;
           break;
         case "contact":
-          el = <Contact key={c._key} {...c} />;
+          el = <Contact key={c._key} {...c}  lang={lang}  />;
           break;
         case "footer":
-          el = <Footer key={c._key} {...c} />;
+          el = <Footer key={c._key} {...c}  lang={lang}  />;
           break;
           
         case "ctaColumns":
-          el = <CTAColumns key={c._key} {...c} />;
+          el = <CTAColumns key={c._key} {...c}  lang={lang}  />;
           break;          
         case "ctaPlug":
-          el = <CTA key={c._key} {...c} />;
+          el = <CTA key={c._key} {...c}  lang={lang}  />;
           break;
         case "uiComponentRef":
           switch (c.name) {
             case "topWave":
-              el = <TopWave />;
+              el = <TopWave  lang={lang}  />;
               break;
             case "bottomWave":
-              el = <BottomWave />;
+              el = <BottomWave  lang={lang}  />;
               break;
             default:
               break;
@@ -135,7 +146,7 @@ const Page = props => {
   const pageTitle = data.route && !data.route.useSiteTitle && page.title;
 
   return (
-    <Layout navMenuItems={menuItems} textWhite={true}>
+    <Layout navMenuItems={menuItems} textWhite={true}  setLang={setLang} lang={lang}>
       <SEO
         title={pageTitle}
         description={site.description}

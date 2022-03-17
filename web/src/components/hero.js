@@ -33,7 +33,7 @@ const maybeImage = illustration => {
 };
 
 function Hero(props) {
-  const lang = 'en';
+  const lang = props.lang;
   const img = maybeImage(props.backgroundIllustration);
   const StyleBackground = {
     backgroundImage: 'url(' + img.props.image.images.fallback.src + ')',

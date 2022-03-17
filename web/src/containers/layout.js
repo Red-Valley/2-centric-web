@@ -40,7 +40,6 @@ function LayoutContainer(props) {
             onHideNav={handleHideNav}
             onShowNav={handleShowNav}
             textWhite={textWhite}
-            logo={data.site.description}
           />
         );
       }}

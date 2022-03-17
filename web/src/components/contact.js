@@ -14,7 +14,7 @@ import { useFormik } from 'formik';
 import * as yup from 'yup';
 
 const Contact = (props) => {
-  const lang = ['en'];
+    const lang = props.lang;
   console.log("Contact props ",props);
 
   const StyleBackground = {

@@ -50,6 +50,7 @@ class Layout extends React.Component {
           showNav={showNav}
           scrolled={scrolled}
           textWhite={textWhite}
+          setLang={this.props.setLang}
           logo={logo}
         />
         <>{children}</>

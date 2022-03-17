@@ -31,7 +31,7 @@ const maybeImage = illustration => {
 };
 
 const PeaceOfMind = (props) => {
-  const lang = ['en'];
+  const lang = props.lang;
   
   const imgglobal = props.imageGlobal.image.asset.url;
 

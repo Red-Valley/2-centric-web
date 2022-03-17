@@ -31,7 +31,7 @@ const maybeImage = illustration => {
 };
 
 const IllWork = (props) => {
-  const lang = 'en';
+  const lang = props.lang;
   
   let bgurl = props.image.image.asset.url;
 

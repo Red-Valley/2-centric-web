@@ -31,7 +31,7 @@ const maybeImage = illustration => {
 };
 
 const Outsourcing = (props) => {
-  const lang = ['en'];
+  const lang = props.lang;
   
   let bgurl = props.imageGlobal.image.asset.url;
   let icon = props.icon.image.asset.url;

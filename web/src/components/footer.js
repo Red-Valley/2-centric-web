@@ -8,7 +8,7 @@ import diagline from '../images/diagline.png';
 
 
 const Footer = (props) => {
-  const lang = ['en'];
+  const lang = props.lang;
   const logo = props.icon.image.asset.url
   
   const StyleBackground = {
