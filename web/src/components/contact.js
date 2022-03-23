@@ -27,8 +27,9 @@ const Contact = (props) => {
   const validations = yup.object().shape({
       name: yup.string().required(requiredText),
       email: yup.string().email().required(requiredText),
-      typeveh: yup.string().required(requiredText),
       message: yup.string().required(requiredText),
+      company: yup.string().required(requiredText),
+      interest: yup.string().required(requiredText),
   });
 
 
@@ -36,7 +37,8 @@ const Contact = (props) => {
       initialValues: {
           name: '',
           email: '',
-          typeveh: '',
+          company: '',
+          interest: '',
           message: '',
       },
       validationSchema: validations,
@@ -48,7 +50,8 @@ const Contact = (props) => {
           var urlencoded = new URLSearchParams();
           urlencoded.append("name", document.getElementById("name").value);
           urlencoded.append("email", document.getElementById("email").value);
-          urlencoded.append("typeveh", document.getElementById("typeveh").value);
+          urlencoded.append("company", document.getElementById("company").value);
+          urlencoded.append("interest", document.getElementById("interest").value);
           urlencoded.append("message", document.getElementById("message").value);
           urlencoded.append("to", document.getElementById("to").value);
           urlencoded.append("site", document.getElementById("site").value);
@@ -149,14 +152,14 @@ const Contact = (props) => {
                                     type="text"
                                     className="form-control formfield"
                                     placeholder={props.labelCompany[lang]}
-                                    name="typeveh"
-                                    id="typeveh"
+                                    name="company"
+                                    id="company"
                                     onChange={formik.handleChange}
-                                    value={formik.values.typeveh}
-                                    isInvalid={!!formik.errors.typeveh && formik.touched.typeveh} />
+                                    value={formik.values.company}
+                                    isInvalid={!!formik.errors.company && formik.touched.company} />
 
                                 <Form.Control.Feedback type="invalid">
-                                    {formik.errors.typeveh}
+                                    {formik.errors.company}
                                 </Form.Control.Feedback>
                             </Form.Group>
                         </Col>
@@ -167,14 +170,14 @@ const Contact = (props) => {
                                     type="text"
                                     className="form-control formfield"
                                     placeholder={props.labelInterest[lang]}
-                                    name="typeveh"
-                                    id="typeveh"
+                                    name="interest"
+                                    id="interest"
                                     onChange={formik.handleChange}
-                                    value={formik.values.typeveh}
-                                    isInvalid={!!formik.errors.typeveh && formik.touched.typeveh} />
+                                    value={formik.values.interest}
+                                    isInvalid={!!formik.errors.interest && formik.touched.interest} />
 
                                 <Form.Control.Feedback type="invalid">
-                                    {formik.errors.typeveh}
+                                    {formik.errors.interest}
                                 </Form.Control.Feedback>
                             </Form.Group>
                         </Col>

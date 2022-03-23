@@ -58,7 +58,7 @@ const Header = ({ showNav, siteTitle, scrolled, navMenuItems = [], textWhite = t
                 </li>
               ))}
             </ul>
-            <div className="langnav hidden-xs">
+            {/* <div className="langnav hidden-xs">
                 <nav style={{width:'200px'}}>
                   <ul>
                       <li onClick={
@@ -87,7 +87,7 @@ const Header = ({ showNav, siteTitle, scrolled, navMenuItems = [], textWhite = t
                       </li>
                   </ul>
                 </nav>
-            </div>
+            </div> */}
           </div>
         )}
       </div>
