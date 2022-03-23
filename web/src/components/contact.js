@@ -102,7 +102,7 @@ const Contact = (props) => {
               </Col>
               <Col md={6}>
                   <form className="contact-form" id="myform" onSubmit={formik.handleSubmit}>
-                    <Form.Group><Form.Control type="hidden" name="to" id="to"  value="info@2centric.com" /></Form.Group>
+                    <Form.Group><Form.Control type="hidden" name="to" id="to"  value="info@hitexperts.com" /></Form.Group>
                     <Form.Group><Form.Control type="hidden" name="site" id="site"  value="https://www.2centric.com/" /></Form.Group>
                         
                     <Row>
