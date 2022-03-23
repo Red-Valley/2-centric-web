@@ -1,11 +1,11 @@
 {
   "root": true,
+  "api": {
+    "projectId": "n56i2w3k",
+    "dataset": "production"
+  },
   "project": {
     "name": "2 centric web"
-  },
-  "api": {
-    "projectId": "zt98oncr",
-    "dataset": "production"
   },
   "plugins": [
     "@sanity/base",
