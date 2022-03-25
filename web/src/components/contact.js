@@ -27,8 +27,8 @@ const Contact = (props) => {
   const validations = yup.object().shape({
       name: yup.string().required(requiredText),
       email: yup.string().email().required(requiredText),
-      message: yup.string().required(requiredText),
       company: yup.string().required(requiredText),
+      message: yup.string().required(requiredText),
       interest: yup.string().required(requiredText),
   });
 
@@ -38,8 +38,8 @@ const Contact = (props) => {
           name: '',
           email: '',
           company: '',
-          interest: '',
           message: '',
+          interest: '',
       },
       validationSchema: validations,
       onSubmit: values => {
@@ -51,10 +51,10 @@ const Contact = (props) => {
           urlencoded.append("name", document.getElementById("name").value);
           urlencoded.append("email", document.getElementById("email").value);
           urlencoded.append("company", document.getElementById("company").value);
-          urlencoded.append("interest", document.getElementById("interest").value);
           urlencoded.append("message", document.getElementById("message").value);
           urlencoded.append("to", document.getElementById("to").value);
           urlencoded.append("site", document.getElementById("site").value);
+          urlencoded.append("interest", document.getElementById("interest").value);
 
           var requestOptions = {
           method: 'POST',
@@ -206,6 +206,7 @@ const Contact = (props) => {
                         <div style={{textAlign:'left',marginTop:'50px'}}>
                             <button type="submit" className='Btnformmail' > SUBMIT FORM</button>
                           </div>  
+                          <div id="output"></div>
                         </Col>
                     </Row>                    
                 </form>
